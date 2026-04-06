@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lato", ui-serif, Georgia, serif;
+  
+  --color-sage: #8DA399;
+  --color-sage-light: #A8BDB4;
+  --color-sage-dark: #6D8278;
+  --color-charcoal: #333333;
+  --color-charcoal-light: #4D4D4D;
+  --color-soft-teal: #E0EAE6;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-charcoal bg-white antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold tracking-tight;
+  }
+}
+
+.white-space-section {
+  @apply py-20 md:py-32;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-sm;
+}
